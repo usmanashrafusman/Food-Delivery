@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  </head>
+
+  <body style="display: flex; flex-direction: column; align-items: center;">
+
+   
+
+
+  <div class="foam">
+    <p class="head">Food Delivery App</p>
+    <h1>Login</h1>
+    <input type="email" placeholder="Email" id="email" />
+
+    <input type="password" placeholder="Password" id="password" />
+<div class="logintyp">
+
+  <input type="radio" name="loginType" id="user" value="User" checked>
+  <label for="html">User</label><br>
+
+  <input type="radio" name="loginType" id="rest" value="Restaurent">
+  <label for="css">Restaurent</label><br>
+
+</div>
+  
+
+    <input class="button" type="button" value="Login" id="login" />
+
+    <h3>Don't have an account</h3>
+    <input class="button" type="button" value="SignUp As User" id="signup" />
+    <input class="button" type="button" value="SignUp As Restaurent" id="signupRes" />
+
+
+    <p id="message"></p>
+
+  </div>
+  <script src="app.js"></script>
+
+  <script>
+    let newSign = document.getElementById("signup");
+newSign.addEventListener("click", signUpToAdd);
+
+let newSignRes = document.getElementById("signupRes");
+newSignRes.addEventListener("click", signUpToAddRes);
+
+let logInNow = document.getElementById("login");
+logInNow.addEventListener("click", function(){
+
+  if(document.getElementById("user").checked == true){
+    logIn()
+}
+else if(document.getElementById("rest").checked == true){
+
+ logInRes()
+
+
+}
+}
+);
+  </script>
+  <script src="config.js"></script>
+
+
+  </body>
+</html>

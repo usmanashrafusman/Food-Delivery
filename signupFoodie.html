@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  </head>
+
+  <body>
+    <center>
+      <div class="foam">
+
+        <h1>Sign Up</h1>
+        <input type="text" id="Fname" placeholder="First Name" />
+        <input type="text" id="Lname" placeholder="Last Name" />
+        <input type="email" placeholder="Email" id="email" />
+        <input type="password" placeholder="Password" id="password" />
+        <input type="text" id="userAddress" placeholder="Address">
+        <input type="tel" id="userContact" placeholder="Contact No">
+        <input type="file" id="photo">
+        <input class="button" type="button" value="SignUp" id="signUpUser" />
+   
+  
+    </center>
+
+    </div>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+    <script>
+     
+
+
+
+      let newUser = document.getElementById("signUpUser");
+      newUser.addEventListener("click", signup);
+    </script>
+  </body>
+</html>

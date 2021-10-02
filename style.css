@@ -1,0 +1,140 @@
+th{
+    border: 2px solid #fff;
+    padding: 10px  20px;
+    text-align: center;
+    color: #fff;
+}
+
+td{
+    border: 1px solid #fff;
+    text-align: center;
+    color: rgb(138, 138, 28);
+}
+
+#b{
+    border: none;
+}
+
+p.head{
+    text-align: center;
+    color: #bb3030;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+body{
+
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.foam{
+    background-color: #404040;
+/* background-image: url(/bg2.jpg); */
+background-repeat: no-repeat;
+background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 40%;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+
+.foam input[type=email], .foam input[type=password] , .foam input[type=text] ,.foam input[type=tel] , .foam input[type=file]{
+    margin-top: 20px;
+    background-color: #f4a400;
+    color: wheat;
+    border: 1px solid #a06a1f;
+    border-radius: 25px;
+    padding: 5px;
+    outline: none;
+}
+
+.foam input[type=button] {
+    margin-top: 10px;
+    background-color: #5c8832;
+    color: wheat;
+    border: 1px solid #35471e;
+    border-radius: 25px;
+    padding: 10px 20px;
+    outline: none;
+    align-self: center;
+}
+
+
+.logintyp
+{
+    display: flex;
+    justify-content: space-evenly;
+    color: #f6c977;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+input:hover{
+    outline: none;
+}
+
+#profilePic , #profPic{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 20px 60px 20px 10px;
+}
+
+.info{
+    background-color: #fff;
+    margin-top: 25px;
+}
+.main{
+    background-color: #fff;
+    display: flex;
+}
+
+span{
+    font-weight: 700;
+}
+
+.options{
+    align-self: center;
+    margin: 40px;
+}
+
+.card-img-top{
+    height: 250px;
+    max-width: 250px;
+    max-width: 100%;
+}
+
+.dash{
+    color: white;
+    padding: 20px;
+    background-color: #3279be;
+}
+
+.pend{
+    color: white;
+    background-color: #a17e24;
+    padding: 15px;
+}
+.approved{
+    color: white;
+    background-color: #0a4e85;
+    padding: 15px;
+}
+.deli{
+    color: white;
+    background-color: #e91e63;
+    padding: 15px;
+}
+#message{
+    color: #bb3535;
+    font-weight: 700;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
