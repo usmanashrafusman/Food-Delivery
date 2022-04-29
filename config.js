@@ -1,13 +1,13 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyC8loxWl2ZDoRQvzAdSYsa3Yq1QiZvTxIg",
-    authDomain: "food-delivery-23a6a.firebaseapp.com",
-    projectId: "food-delivery-23a6a",
-    storageBucket: "food-delivery-23a6a.appspot.com",
-    messagingSenderId: "234810484833",
-    appId: "1:234810484833:web:61e9ab2bf00330f5516220",
-    measurementId: "G-NGERJBBEG7"
-  };
+  apiKey: "AIzaSyA7O24TX7eWVyj5YgWiUzmxll6qmkCrqTU",
+  authDomain: "food-deliverynewconfig.firebaseapp.com",
+  projectId: "food-deliverynewconfig",
+  storageBucket: "food-deliverynewconfig.appspot.com",
+  messagingSenderId: "487089574310",
+  appId: "1:487089574310:web:360625277eac33e1ef7f67",
+  measurementId: "G-LE4TS6K350"
+};
 
-  firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();
